@@ -1,9 +1,7 @@
-[![tx-api-gw Actions Status](https://github.com/abdelhamidbakhta/tx-api-gw/workflows/tx-api-gw-ci/badge.svg)](https://github.com/abdelhamidbakhta/tx-api-gw/actions)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/abdelhamidbakhta/tx-api-gw/blob/master/LICENSE)
-[![sonar-quality-gate][sonar-quality-gate]][sonar-url] [![sonar-coverage][sonar-coverage]][sonar-url] [![sonar-bugs][sonar-bugs]][sonar-url] [![sonar-vulnerabilities][sonar-vulnerabilities]][sonar-url]
-# Transaction API Gateway
 
-## Description
+# [Transaction API Gateway](#)
+
+## Overview
 
 This module is a standalone HTTP service enabling to submit Ethereum transactions.
 Supported transactions are the following:
@@ -63,7 +61,6 @@ Go to http://localhost:8080 to see the API definition in a web browser.
 
 API docs specification are available at http://localhost:8080/v3/api-docs
 
-Online version of the API can be found at http://eip1559-tx.ops.pegasys.tech:8080
 
 ## Docker
 
@@ -85,14 +82,6 @@ docker build -t $IMAGE_NAME .
 docker run -p 8080:8080 -t $IMAGE_NAME
 ```
 
-### Use existing image
+## License 
 
-```shell script
-docker run -p 8080:8080 abdelhamidbakhtaconsensys/tx-api-gw:latest
-```
-
-[sonar-url]: https://sonarcloud.io/dashboard?id=abdelhamidbakhta_tx-api-gw
-[sonar-quality-gate]: https://sonarcloud.io/api/project_badges/measure?project=abdelhamidbakhta_tx-api-gw&metric=alert_status
-[sonar-coverage]: https://sonarcloud.io/api/project_badges/measure?project=abdelhamidbakhta_tx-api-gw&metric=coverage
-[sonar-bugs]: https://sonarcloud.io/api/project_badges/measure?project=abdelhamidbakhta_tx-api-gw&metric=bugs
-[sonar-vulnerabilities]: https://sonarcloud.io/api/project_badges/measure?project=abdelhamidbakhta_tx-api-gw&metric=vulnerabilities
+Apache-2.0
