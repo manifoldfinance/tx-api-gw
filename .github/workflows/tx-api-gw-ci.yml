@@ -81,6 +81,6 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: abdelhamidbakhtaconsensys/tx-api-gw
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          repository: manifoldfinance/tx-api-gw
           tag_with_ref: true
