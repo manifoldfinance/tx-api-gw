@@ -8,7 +8,7 @@ FROM adoptopenjdk/openjdk11:x86_64-alpine-jdk-11.0.10_9-slim
 #FROM openjdk:11.0.8-jdk
 EXPOSE 8080 9000
 #ENV HEALTH_CHECK_URL http://localhost:9000/health
-#ENV OTEL_RESOURCE_ATTRIBUTES="service.name=eip1559,service.version=$VERSION"
+ENV OTEL_RESOURCE_ATTRIBUTES="service.name=eip1559,service.version=$VERSION"
 
 COPY --from=build /home/gradle/src/build/libs/*.jar app.jar
 
